@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/styles/layout/index.scss">
+    <link rel="stylesheet" href="./Assets/styles/layout/index.css">
     <script src="./Assets/js/jquery.js"></script>
-
     <title>HOME | BLACK PANTHER</title>
 </head> 
 <body>
@@ -16,13 +15,22 @@
                 <a href="index.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer2.png" alt="logo SAYNA & MARVEL"></a>
             </div>
             <ul>
-                <li><a class="actif" href="index.html">ACCEUIL</a></li>
-                <li><a href="wakanda.html">WAKANDA</a></li>
-                <li><a href="enigme.html">ENIGME</a></li>
+                <li><a class="actif fadein" href="index.html">ACCEUIL</a></li>
+                <li><a href="wakanda.html" class="fadein">WAKANDA</a></li>
+                <li><a href="enigme.html" class="fadein">ENIGME</a></li>
             </ul>
         </nav>
     </header>
     <main>
+
+        <!-- POPUP -->
+        <div class="popup" id="close">
+            <div class="container">
+                <p id="message">
+                </p>
+            </div>
+        </div>
+
         <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="container">
@@ -39,18 +47,17 @@
         <section id="banner">
             <div class="container">
                 <div>
-
-                    <h1>BLACK PANTHER</h1>
-                    <h2>WAKANDA FOREVER</h2>
+                    <h1 class="fadein">BLACK PANTHER</h1>
+                    <h2 class="fadein">WAKANDA FOREVER</h2>
                 </div>
                 <div>
-                    <p>
+                    <p class="fadein">
                         En plus d'être un film qui fait la part belle aux héroïnes, Black Panther rend
                         hommage aux cultures africaine et afro américaine. On y évoque le
                         racisme, la colonisation et les violences contre les afro américains. 
                         Ce film marque tout une génération, "c’est 100% africain et c’est parfait".
                     </p>
-                    <a href="#">voir plus ></a>
+                    <a href="#" class="fadein">voir plus ></a>
                 </div>
             </div>
         </section>
@@ -59,22 +66,22 @@
         <section id="slide">
             <div class="container">
                 <span class="button">
-                    >
+                    &#62;
                 </span>
                 <div class="card">
                     <div class="card_img">
                         <img class="zoom" src="Assets/Illustrations_&_Logo/accueil/Pantherhome2.png" alt="KILLMONGER">
                     </div>
                     <div class="card_text">
-                        <h2>KILLMONGER</h2>
-                        <p>
+                        <h2 class="fadein">KILLMONGER</h2>
+                        <p class="fadein">
                             La sauvagerie de N'Jadaka alors qu'il servait dans une
                             unité d'opérations noires de l'armée américaine lui a
                             valu le surnom de Killmonger. D’origine Wakandaise,
                             et se sentant abandoné par sa nation, il cherche à
                             détroner T’Challa dans une quête vers le pourvoir.
                         </p>
-                        <a href="#">voir plus ></a>
+                        <a href="#" class="fadein">voir plus ></a>
                     </div>
                 </div>
                 <div class="card">
@@ -82,26 +89,21 @@
                         <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome3.png" alt="OKOYE">
                     </div>
                     <div class="card_text">
-                        <h2>OKOYE</h2>
-                        <p>
+                        <h2 class="fadein">OKOYE</h2>
+                        <p class="fadein">
                             Okoye est le général des Dora Milaje (groupe d’élite
                             de femmes guerrières) et le chef des forces armées et
                             des renseignements wakandais. Témoin du
                             couronnement de T'Challa, elle se joint à lui dans de
                             nombreuses aventures.
                         </p>
-                        <a href="#">voir plus ></a>
+                        <a href="#" class="fadein">voir plus ></a>
                     </div>
                 </div>
                 <div class="">
                     <div class="card_img">
                         <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome4.png" alt="">
                     </div>
-                    <!-- <div class="card_text">
-                        <h2></h2>
-                        <p></p>
-                        <a href="#">voir plus ></a>
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -111,14 +113,14 @@
             <!-- <div class="text"> -->
                 <article>
                     <div class="section_1 block">
-                        <h2>Naissance d’un prince</h2>
-                        <p>
+                        <h2 class="fadein">Naissance d’un prince</h2>
+                        <p class="fadein">
                             T'Challa est né au Wakanda, un pays isolationniste situé en Afrique, du monarque régnant T'Chaka et de sa femme
                             Ramonda. Il a finalement eu une sœur cadette nommée Shuri. S'entraînant toute sa vie pour prendre la place de son père
                             en tant que prochain Black Panther, T'Challa est devenu un homme avec un esprit très actif et malgré tous les efforts de
                             T'Chaka, une grande aversion pour la politique.
                         </p>
-                        <p>
+                        <p class="fadein">
                             T'Challa est poli, respectueux et très attentionné envers les gens qu'il côtoie et qu'il considère comme ses amis. Il est
                             démontré qu'il a un grand respect envers les autres, en particulier envers son père, T'Chaka. Il honore la tradition et les
                             principes du Wakanda et est prêt à agir chaque fois que cela est nécessaire. À la mort de son père, il était disposé et prêt à
@@ -126,8 +128,8 @@
                             tenté de venger la mort de son père. Combattant honorable, T'Challa respecte ses adversaires et est prêt à épargner la vie
                             de ses ennemis. Cela étant dit, il n'est pas opposé à tuer ses adversaires dans un combat et n'essaie pas toujours d'éviter les
                             mesures mortelles de les neutraliser.
-                        </p>
-                        <p class="citation">
+                        </p class="fadein">
+                        <p class="citation fadein">
                             « Toute ma vie, je l'ai regardé porter le costume. Il pouvait soulever un homme à une seule main et courir aussi vite
                             qu'un zèbre. Puis il m'a dit qu'il était trop vieux pour continuer à endosser le rôle de Black Panther; il me l'a alors <br>
                             passé afin de simplement rester roi. <br>
@@ -136,28 +138,28 @@
                         </p>
                     </div>
                     <div class="section_2 block">
-                        <h2>un heros vengeur</h2>
-                        <p class="citation">
+                        <h2 class="fadein">un heros vengeur</h2>
+                        <p class="citation fadein">
                             « La mort, dans notre culture, n'est pas la fin. Pour nous, c'est plutôt un point de départ. Le défunt n'a qu'à tendre les
                             bras; et Bast et Sekhmet le guident jusqu'à l'entrée de la grande vallée où il résidera à tout jamais.
                             C'est une vision très pacifique. <br>
                             - À l'image de mon père. Je ne suis pas mon père. » <br>
                             - T'Challa et Natasha Romanoff
                         </p>
-                        <p>
+                        <p class="fadein">
                             Suite à la mort de son père dans l'attentat à la bombe orchestré par Helmut Zemo, terroriste souhaitant la chute des
                             Avengers, T'Challa avait entrepris de tuer le Soldat de l'hiver, qui était largement considéré (à tort) comme responsable de
                             l'attaque. Au cours de sa tentative de trouver le Soldat de l'hiver, Black Panther avait rejoint une guerre civile entre les
                             Avengers, où il s'était rangé du côté d'Iron Man. T’Challa est alors animé par son désir de vengeance de la mort de son père,
                             ce qu’il partage avec Iron Man, tous deux victimes de l’assassinat de leurs parents.
                         </p>
-                        <p>
+                        <p class="fadein">
                             Cependant, Black Panther apprend finalement en capturant Zemo, que c’était lui le seul responsable de la mort de son
                             père, et que le Soldat de l’hiver n’était alors qu’une arme entre les mains de Zemo. Se rendant compte de la supercherie
                             ainsi que de la voie sombre de la vengeance, T’Challa se promet de ne plus permettre aux désirs de vengeance de le
                             consumer à nouveau.
                         </p>
-                        <p class="citation">
+                        <p class="citation fadein">
                             « Quelle est la meilleure façon de protéger le Wakanda ? Je dois devenir un grand roi baba, comme tu l'étais.
                             Tu devras lutter. Pour ça, il te faudra t'entourer de personnes de confiance. Tu es un homme bon, avec un grand <br>
                             - coeur. C'est difficile pour un homme bon d'être roi. » <br>
@@ -165,22 +167,22 @@
                         </p>
                     </div>
                     <div class="section_3 block">
-                        <h2>un heros PROTECTEUR ET JUSTICIER</h2>
-                        <p class="citation">
+                        <h2 class="fadein">un heros PROTECTEUR ET JUSTICIER</h2>
+                        <p class="citation fadein">
                             « Tu as eu tort ! Vous avez tous eu tort ! Il ne fallait pas tourner le dos au reste du monde. Nous avons laissé la peur
                             d’être découverts nous empêcher de faire ce qui était juste. Non père, non je ne peux pas rester ici avec toi. Tant qu’il
                             sera sur le trône, je ne saurai trouver le repos. C’est un monstre et c’est nous qui l’avons créé. Il faut que je reprenne <br>
                             - le pouvoir, il le faut ! Il faut que je corrige ces injustices. » <br>
                             - T'Challa à T'Chaka
                         </p>
-                        <p>
+                        <p class="fadein">
                             Il y a des siècles, alors que cinq tribus africaines se disputaient une météorite composée de vibranium métallique
                             extraterrestre, un chaman guerrier Bashenga, guidé par la déesse panthère Bast, ingère une herbe en forme de cœur
                             affectée par le métal et acquiert des capacités surhumaines. Devenu le premier Black Panther , il unit toutes les tribus sauf
                             la tribu des Jabari, et forme la nation du Wakanda. Au fil du temps, les Wakandains utilisent le vibranium pour développer
                             une technologie de pointe tout en s'isolant du reste du monde et en se faisant passer pour un pays du tiers monde.
                         </p>
-                        <p>
+                        <p class="fadein">
                             Après les événements qui se sont déroulés dans Captain America : Civil War , T'Challa revient chez lui prendre sa place sur
                             le trône du Wakanda, une nation africaine technologiquement très avancée. Néanmoins, T’Challa se retrouve rapidement
                             mis au défi pour obtenir le trône. Une fois couronné il espère accomplir une tâche que son père n’aura pas pu mener à son
@@ -198,25 +200,25 @@
                         <img src="Assets/Illustrations_&_Logo/accueil/Pantherhome5.png" alt="Chadwick Boseman">
                     </div>
                     <div class="card_body">
-                        <h3>T’Challa</h3>
+                        <h3 class="fadein">T’Challa</h3>
                         <ul>
-                            <li>Black Panther </li>
-                            <li>Roi du Wakanda</li>
-                            <li>En vie</li>
+                            <li class="fadein">Black Panther </li>
+                            <li class="fadein">Roi du Wakanda</li>
+                            <li class="fadein">En vie</li>
                         </ul>
                         <div class="id">
-                            <h4>Acteur: <span> Chadwick Boseman</span></h4>
-                            <h4>Apparition: <span>Captain America Civil War (2016)</span></h4>
-                            <h4>Éspèce: <span>humain</span></h4>
-                            <h4>Nationalité: <span>Wakandais</span></h4>
-                            <h4>Sexe: <span>Homme</span></h4>
-                            <h4>Décès: 
+                            <h4 class="fadein">Acteur: <span> Chadwick Boseman</span></h4>
+                            <h4 class="fadein">Apparition: <span>Captain America Civil War (2016)</span></h4>
+                            <h4 class="fadein">Éspèce: <span>humain</span></h4>
+                            <h4 class="fadein">Nationalité: <span>Wakandais</span></h4>
+                            <h4 class="fadein">Sexe: <span>Homme</span></h4>
+                            <h4 class="fadein">Décès: 
                                 <span>31 mai 2018</span> 
                                 <span class="mini"> (victime du Snap ; ressuscité par Hulk
                                     en 2023)</span> 
                                 <span>(2016)</span>
                             </h4>
-                            <h4>Réalité: <span> Terre-199999</span></h4>
+                            <h4 class="fadein">Réalité: <span> Terre-199999</span></h4>
                         </div>
                     </div>
                 </div>
@@ -230,36 +232,35 @@
         <section id="newsletter">
             <div class="container">
                 <div>
-                    <p>Besoin de l’intervention du Wakanda ?</p>
-                    <h3>Contactez nous !</h3>
+                    <p  class="fadein">Besoin de l’intervention du Wakanda ?</p>
+                    <h3 class="fadein">Contactez nous !</h3>
                 </div>
-                <form>
-                    <input type="text" placeholder="Nom">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button type="submit">ENVOYER</button>
+                <form id="contact">
+                    <input type="text" placeholder="Nom" class="forminput">
+                    <input type="email" name="" id="" placeholder="Email" class="forminput">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="forminput"></textarea>
+                    <button type="submit" id="send">ENVOYER</button>
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <!-- <div class="">
-        </div> -->
-        <div class="footer_img">
+        <a href="./index.html#banner" class="footer_img">
             <img class="float" src="Assets/Illustrations_&_Logo/all_pages/footer2.png" alt="logo SAYNA & MARVEL">
             <img src="Assets/Illustrations_&_Logo/all_pages/footer1.png" alt="#">
-        </div>
+        </a>
         <div class="container">
             <div class="row">
                 <div class="page_link">
-                    <h5>pages</h5>
-                    <ul>
-                        <li><a href="">à propos</a></li>
-                        <li><a href="">Wakanda</a></li>
+                    <h5 class="fadein">pages</h5>
+                    <ul class="fadein">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./wakanda.html">Wakanda</a></li>
+                        <li><a href="./enigme.html">Énigme</a></li>
                     </ul>
                 </div>
                 <div class="reseau">
-                    <h5>retrouvez nous</h5>
+                    <h5 class="fadein">retrouvez nous</h5>
                     <div class="icon">
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer3.png" alt="icon Facebook"></a>
                         <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html"><img src="Assets/Illustrations_&_Logo/all_pages/footer4.png" alt="icon Instagram"></a>
@@ -269,7 +270,7 @@
                 </div>
             </div>
             <div class="row_2">
-                <p>
+                <p class="fadein">
                     2022 Tous droits réservés
                     <ul>
                         <li><a href="#">Politique de confidentialité</a></li>
@@ -279,5 +280,7 @@
             </div>
         </div>
     </footer>
+    <script src="./Assets/js/popup.js"></script>
+    <script src="./Assets/js/animation.js"></script>
 </body>
 </html>

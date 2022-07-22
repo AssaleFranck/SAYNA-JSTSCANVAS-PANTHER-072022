@@ -10,19 +10,19 @@
 
 @font-face {
   font-family: "Panthera";
-  src: url("../Fonts/Panthera/PantheraRegular-MVZ9J.ttf");
+  src: url("../../Fonts/Panthera/PantheraRegular-MVZ9J.ttf");
 }
 @font-face {
   font-family: "Cantarell";
-  src: url("../Fonts/cantarell/Cantarell-Regular.ttf");
+  src: url("../../Fonts/cantarell/Cantarell-Regular.ttf");
 }
 @font-face {
   font-family: "Beyno";
-  src: url("../Fonts/beyno/BEYNO.ttf");
+  src: url("../../Fonts/beyno/BEYNO.ttf");
 }
 @font-face {
   font-family: "Wakanda";
-  src: url("../Fonts/wakanda_forever/WakandaForever-Regular.ttf");
+  src: url("../../Fonts/wakanda_forever/WakandaForever-Regular.ttf");
 }
 h1 {
   font-family: "Panthera";
@@ -57,7 +57,7 @@ p, a, h5, h4, h3, li {
 }
 
 body {
-  background-image: url("../Illustrations_&_Logo/all_pages/arrière_plan.png");
+  background-image: url("../../Illustrations_&_Logo/all_pages/arrière_plan.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #fff;
@@ -69,7 +69,7 @@ a {
 }
 
 /* ----------------------------- HERITAGE ----------------------------- */
-.d-flex, .col_2, form, .col_1, #defi .row, #banner .text, #banner .container, #banner, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, nav ul, nav, header {
+.d-flex, .col_2, form, .col_1, #defi .row, #banner .text, #banner .container, #banner, .row_2 ul, .row_2, .icon, .row, footer .container, .footer_img, footer, nav ul, nav, header, .sidebar .row {
   display: flex;
 }
 
@@ -78,7 +78,7 @@ a {
   align-items: center;
 }
 
-.flex_between, .col_1, .icon, .row, footer .container, nav ul, nav {
+.flex_between, .col_1, .icon, .row, footer .container, nav ul, nav, .sidebar .row {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -104,7 +104,7 @@ a {
   align-items: center;
 }
 
-.d_column, .col_2, form, .col_1, #banner .container, footer .container {
+.d_column, .col_2, form, .col_1, #banner .container, footer .container, .sidebar .row {
   flex-direction: column;
 }
 
@@ -130,6 +130,35 @@ a {
 
 .test4 {
   border: 1px solid red;
+}
+
+/* ----------------------------- sidebar ----------------------------- */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 2vw;
+  height: 60vh;
+  width: 1vw;
+  border: 3px solid var(--silver);
+  border-top: none;
+  border-bottom: none;
+}
+.sidebar .container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.sidebar .row {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  right: -50%;
+  padding-top: 10px;
+  background-color: #0f1828;
+}
+.sidebar .row img {
+  width: 100%;
 }
 
 header {
@@ -158,7 +187,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 nav ul li a:hover {
-  color: var(--purple);
+  color: #fff !important;
   text-decoration: underline;
 }
 
@@ -245,6 +274,9 @@ footer {
   position: relative;
   height: 75%;
   width: 25%;
+}
+.footer_img:hover {
+  transform: scale(1.1);
 }
 
 .float {

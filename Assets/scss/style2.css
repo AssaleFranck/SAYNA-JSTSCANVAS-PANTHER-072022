@@ -276,7 +276,6 @@ p, h1, h2, h3, h4, h6, h5 {
   header .logo img {
     width: 100%;
   }
-
   nav ul {
     width: 60%;
   }
@@ -291,7 +290,6 @@ p, h1, h2, h3, h4, h6, h5 {
     flex-direction: column;
     height: auto;
   }
-
   .footer_img {
     width: 100%;
     height: 50vh;
@@ -305,7 +303,6 @@ p, h1, h2, h3, h4, h6, h5 {
     right: 40%;
     max-height: 100%;
   }
-
   footer .container, footer .row, footer .row_2, footer ul {
     width: 100%;
     margin-top: 10px;

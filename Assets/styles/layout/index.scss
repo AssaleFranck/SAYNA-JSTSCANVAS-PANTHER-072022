@@ -1,4 +1,5 @@
 @import '../main';
+@import '../component/popup';
 
 
 a {
@@ -15,40 +16,6 @@ img {
     max-width: 100%;
 }
 
-/* ----------------------------- sidebar ----------------------------- */
-
-.sidebar {
-    position: absolute;
-    top: 0;
-    left: 2vw;
-    height: 60vh;
-    width: 1vw;
-    border: 3px solid var(--silver);
-    border-top: none;
-    border-bottom: none;
-    
-    .container {
-        position: relative;
-        height: 100%;
-        width: 100%;
-    }
-
-    .row {
-        @extend .d-flex, .d_column, .flex_between;
-        position: absolute;
-        height: 30%;
-        width: 100%;
-        bottom: 0;
-        right: -50%;
-        padding-top: 10px;
-        background-color: #0f1828;
-
-        img {
-            width: 100%;
-        }
-    }
-
-} 
 
 /* ---------------------------- SECTION BANNER ---------------------------------*/
 
@@ -116,6 +83,10 @@ img {
         height: 35px;
         width: 35px;
         background: var(--darkblue);
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 20px var(--ivory);
+        }
     }
 
     .card {
@@ -361,4 +332,9 @@ input, textarea {
             height: 70%;
         }
     }
+}
+
+.fadein {
+    position: relative !important;
+    // right: 300px;
 }

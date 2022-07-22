@@ -1,0 +1,29 @@
+#close {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #021740af;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 50vw;
+        background: #021740;
+    }
+    p {
+        
+        text-align: center;
+        color: #fff;
+    }
+    #message {
+        position: static;
+    }
+}
