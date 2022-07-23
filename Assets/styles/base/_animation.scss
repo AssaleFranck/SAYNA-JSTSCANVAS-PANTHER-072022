@@ -1,11 +1,17 @@
 /* -------------------- FOR TEXT --------------------------*/
 
-p, h1, h2, h3, h4, h6, h5 {
+.fadein {
     position: relative;
     animation-name: textmove;
     animation-duration: 4s;
     animation-iteration-count: 1;
 }
+// p, h1, h2, h3, h4, h6, h5 {
+//     position: relative;
+//     animation-name: textmove;
+//     animation-duration: 4s;
+//     animation-iteration-count: 1;
+// }
 
 @keyframes textmove {
     from {right: 300px;}
@@ -44,3 +50,12 @@ p, h1, h2, h3, h4, h6, h5 {
 }
 
 /* -------------------------------------------------------------*/
+
+
+
+/* -------------------------- CURSOR ----------------------------*/
+// a, button {
+//     &:hover {
+//         cursor: auto;
+//     }
+// }

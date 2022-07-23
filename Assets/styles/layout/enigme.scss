@@ -76,17 +76,36 @@
 }
 
 .col_1 {
-    @extend .d-flex, .d_column, .flex_between;
+    @extend .d-flex, .d_column;
+    justify-content: space-between;
     height: 70vh;
 
-    p {
-        margin-bottom: 10px;
-        font-size: 15px;
-        text-align: start;
+    h2 {
+        width: 100%;
 
         span {
-            font-family: 'Wakanda';
+            font-family: 'Cantarell', 'sans serif';
+            font-size: 36px;
         }
+    }
+    .alphabet {
+        
+        p {
+            margin-top: 10px
+        }
+
+        #dora {
+            font-family: 'Wakanda';
+            word-spacing: 40px;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    #id {
+        font-family: 'Cantarell', 'Sans Serif';
+        font-size: 34px
     }
 }
 
@@ -117,6 +136,9 @@ form {
         &:hover {
             box-shadow: 0 0 20px var(--ivory);
         }
+    }
+    p {
+        margin-bottom: 10px;
     }
 }
 
@@ -212,7 +234,6 @@ form {
         }
         
         .row {
-            border: 1px solid #fff;
             flex-direction: column;
         }
 

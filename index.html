@@ -9,6 +9,10 @@
     <title>HOME | BLACK PANTHER</title>
 </head> 
 <body>
+
+    <!-- CURSEUR -->
+    <img src="./Assets/Illustrations_&_Logo/logo_souris_BP2_blanc.png" alt="" id="cursor">
+    
     <header>
         <nav>
             <div class="logo">
@@ -22,6 +26,7 @@
         </nav>
     </header>
     <main>
+
 
         <!-- POPUP -->
         <div class="popup" id="close">
@@ -230,15 +235,15 @@
 
         <!-- SECTION NEWSLETTER -->
         <section id="newsletter">
-            <div class="container">
+            <div class="container" id="stopmouse">
                 <div>
                     <p  class="fadein">Besoin de l’intervention du Wakanda ?</p>
                     <h3 class="fadein">Contactez nous !</h3>
                 </div>
                 <form id="contact">
-                    <input type="text" placeholder="Nom" class="forminput">
-                    <input type="email" name="" id="" placeholder="Email" class="forminput">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="forminput"></textarea>
+                    <input type="text" placeholder="Nom" class="forminput" name="nom" id="nom">
+                    <input type="email" name="mail" id="mail" placeholder="Email" class="forminput">
+                    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Message" class="forminput"></textarea>
                     <button type="submit" id="send">ENVOYER</button>
                 </form>
             </div>
@@ -280,7 +285,9 @@
             </div>
         </div>
     </footer>
-    <script src="./Assets/js/popup.js"></script>
+    <script src="./Assets/js/popup_contact.js"></script>
     <script src="./Assets/js/animation.js"></script>
+    <script src="./Assets/js/mouse.js"></script>
+    <script src="./Assets/js/test.js"></script>
 </body>
 </html>

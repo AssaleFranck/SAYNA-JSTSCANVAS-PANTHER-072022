@@ -1,80 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./Assets/js/jquery.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./Assets/js/jquery.js"></script>
+  <link rel="stylesheet" href="./Assets/styles/layout/index.scss">
+  <title>Document</title>
 </head>
 <body>
-    <!-- <a href="" id="lancer">lancer</a> -->
-    <div class="popup" id="end">
-        <div class="container" id="t1">
-            <p id="message">
-                nav
-            </p>
-        </div>
-        <div class="container" id="t2">
-            <p id="message">
-                t2
-            </p>
-        </div>
-        <div class="container" id="t3">
-            <p id="message">
-                t3
-            </p>
-        </div>
-        <div class="container" id="t4">
-            <p id="message">
-                t4
-            </p>
-        </div>
-        <div class="container" id="t5">
-            <p id="message">
-                T5
-            </p>
-        </div>
-        <div class="container" id="last">
-            <p id="message">
-                footer
-            </p>
-        </div>
+
+  <!-- POPUP -->
+  <div class="popup" id="close">
+    <div class="container">
+        <p id="message">
+        </p>
     </div>
-    
-    <script src="./Assets/js/test.js"></script>
+  </div>
+
+  <h2>enigme numero <span id="id"></span></h2>
+  <p id="indice"></p>
+  <p id="enigme"></p>
+  <p id="dora"></p>
+  <p id="info"></p>
+  <form action="" id="form">
+    <label for="reponse"></label>
+    <input name="reponse" type="text" id="reponse" placeholder="votre reponse">
+    <button type="submit" id="send">repondre</button>
+  </form>
+
+  <script src="./Assets/js/test.js"></script>
+  <!-- <script src="./Assets/js/popup_contact.js"></script> -->
 </body>
 </html>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .popup {
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        height: 300vh;
-        width: 100vw;
-        background: #0217403b;
-        /* position: absolute;
-        top: 0;
-        left: 0; */
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        width: 50vw;
-        background: #021740;
-    }
-    #t3, #t4, #t5, #last {
-        display: none;
-    }
-    p {
-        text-align: center;
-        color: #fff;
-    }
-</style>
